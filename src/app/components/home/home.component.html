@@ -1,0 +1,85 @@
+<hr>
+<div style="color:green">
+<h3>{{ ay7aga }}</h3>
+
+<h2>{{ aynumber * 9 }}</h2>
+
+<p>manger of emps: {{ manger }}</p>
+<ul>
+  <li *ngFor="let emp of emps">name : {{ emp }}</li>
+</ul>
+
+<p *ngIf="emps.length> 2">emps is more than 2</p>
+<p *ngIf="emps.length< 4">emps is less than 4</p>
+
+
+</div>
+
+<p> interpolitions {{ 2 + 3 }}</p>
+
+
+
+
+
+
+<hr>
+<h2>one way binding</h2>
+<p>{{ oneWayName }}</p>
+<input type="text" #inputOne>
+<button (click)="clickOne(inputOne.value)">click</button>
+
+
+
+
+
+
+
+
+<hr>
+<ul>
+  <li *ngFor="let student of students">{{ student }}</li>
+</ul>
+
+
+
+
+ <input type="text" #studentInput>
+<button  (click)="add(studentInput.value)">add</button> 
+
+
+
+
+
+
+<hr>
+
+<input type="text" [(ngModel)]="lucture">
+<p>{{ lucture }}</p>
+
+
+
+
+
+
+
+
+
+
+<!-- <hr>
+<h2>two way binding</h2>
+<input type="text" [(ngModel)]="lucture" placeholder="enter"> 
+<p>{{lucture}}</p>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
